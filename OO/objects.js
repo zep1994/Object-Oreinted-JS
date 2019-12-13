@@ -29,14 +29,30 @@
 // console.log(person.getFuntion())
 
 //USING AN OBJECT CONTSTRUCTOR
-function person(firstName, lastName) {
-    this.firstName = firstName
-    this.lastName = lastName
+// function person(firstName, lastName) {
+//     this.firstName = firstName
+//     this.lastName = lastName
+// }
+
+// //creating a new instance of that object
+// let person1 = new person('Tommy', 'John')
+// let person2 = new person('Thomas', 'Matlock')
+
+// console.log(person1.firstName)
+// console.log(`${person2.firstName} ${person2.lastName}`)
+
+//Use Object.create() 
+const coder = {
+    isStudying: false,
+    printIntroduction : function() {
+        console.log(`My name is ${this.name}. Am I studying?: ${this.isStudying}`)
+    }
 }
 
-//creating a new instance of that object
-let person1 = new person('Tommy', 'John')
-let person2 = new person('Thomas', 'Matlock')
 
-console.log(person1.firstName)
-console.log(`${person2.firstName} ${person2.lastName}`)
+const me = Object.create(coder) 
+
+me.name = "Tom"
+me.isStudying = "True"
+
+me.printIntroduction()
