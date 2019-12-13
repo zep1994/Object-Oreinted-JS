@@ -42,17 +42,17 @@
 // console.log(`${person2.firstName} ${person2.lastName}`)
 
 //Use Object.create() 
-const coder = {
-    isStudying: false,
-    printIntroduction : function() {
-        console.log(`My name is ${this.name}. Am I studying?: ${this.isStudying}`)
-    }
-}
+// const coder = {
+//     isStudying: false,
+//     printIntroduction : function() {
+//         console.log(`My name is ${this.name}. Am I studying?: ${this.isStudying}`)
+//     }
+// }
 
 
-const me = Object.create(coder) 
+// const me = Object.create(coder) 
 
-me.name = "Tom"
-me.isStudying = "True"
+// me.name = "Tom"
+// me.isStudying = "True"
 
-me.printIntroduction()
+// me.printIntroduction()
