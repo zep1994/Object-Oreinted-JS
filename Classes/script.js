@@ -22,15 +22,16 @@
 // console.log(newVehicle1.getDetails())
 
 //Tradtional Way of defining a class
-function Person(firtName, lastName) {
-        this.firtName = firtName
-        this.lastName = lastName
-    }
+// function Person(firtName, lastName) {
+//         this.firtName = firtName
+//         this.lastName = lastName
+//     }
 
-    Person.prototype.getDetails = function() {
-        console.log(`${firstName} ${lastName}`)
-    }
+//     Person.prototype.getDetails = function() {
+//         console.log(`${firstName} ${lastName}`)
+//     }
 
-let person1 = new Person("Thomas", "Matlock")
+// let person1 = new Person("Thomas", "Matlock")
 
-console.log(person1)
+// console.log(person1)
+
